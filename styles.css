@@ -1,0 +1,17 @@
+h3{
+    margin-right: 5cm;
+    text-align: left 5cm;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3 {
+    background-image: url("pond.jpg");
+    margin-right: 25cm;
+    margin-left: 10cm;
+    background-blend-mode: overlay;
+    background-position: center;
+    border-image-width: 0rex;
+    padding: 50px 100px 50px 100px;
+  }
+
