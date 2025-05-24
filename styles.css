@@ -1,17 +1,111 @@
+/* importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=IM+Fell+DW+Pica&family=Protest+Revolution&display=swap');
+
+
+h1 {
+    color: #F9BA55;
+    font-weight: 300;
+    font-family: "Dongle", sans-serif;
+    font-size: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+h2 {
+    font-family: "Dongle", sans-serif;
+    font-weight: 300;
+    font-size:75%;
+    color:aliceblue;
+}
+
 h3{
+    font-family: "Dongle", sans-serif;
+    font-size:20%;
+    font-weight: 300;
     margin-right: 5cm;
     text-align: left 5cm;
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-h3 {
-    background-image: url("pond.jpg");
-    margin-right: 25cm;
-    margin-left: 10cm;
-    background-blend-mode: overlay;
-    background-position: center;
-    border-image-width: 0rex;
-    padding: 50px 100px 50px 100px;
+p{
+    font-size: 70%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: none;
+    margin-bottom: none;
+}
+
+hr {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: "Dongle", sans-serif;
+    font-weight: 300;
+    font-size: 200%;
+    background-color: #1E0A1B;
+    color: aliceblue;
+}
+
+/* -------SCROLLING TEXT STYLING----- */
+
+#animated-text-strip{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    overflow: hidden;
+  }
+  #animated-text-strip .marquee {
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+    max-width: none;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+  
+  /* Styles for the sake of the demonstration */
+  #animated-text-strip2{
+    padding: 1rem 0;
+  }
+  .marquee2{
+    font-family: 'Dongle', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: white;
   }
 
+  #animated-text-strip2{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    overflow: hidden;
+  }
+  #animated-text-strip2 .marquee2 {
+    white-space: nowrap;
+    animation: marquee2 10s linear infinite;
+    max-width: none;
+  }
+  
+  @keyframes marquee2 {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
