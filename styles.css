@@ -335,7 +335,7 @@ https://flickity.metafizzy.co
 /* carosel styling */
 
 .carousel {
-  background: #ebf0f2;
+  background: #230616;
 }
 
 .carousel-cell {
@@ -402,7 +402,7 @@ https://flickity.metafizzy.co
 }
 /* arrow color */
 .flickity-prev-next-button .arrow {
-  fill: #1E0A1B;
+  fill: #ffffff;
 }
 /* closer to edge */
 .flickity-prev-next-button.previous { left: 0; }
@@ -411,3 +411,5 @@ https://flickity.metafizzy.co
 .flickity-prev-next-button:disabled {
   display: none;
 }
+
+/* help */
