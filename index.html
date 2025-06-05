@@ -8,51 +8,100 @@
         - Link to the favicon (small image that appears in the browser tab)
         - Link to the CSS file (used to style the webpage)
         -->
-        <title>⋆⁺⊹☽ Moondance ☾₊⁺⋆</title>
+        <title>MOONDANCE</title>
         <style>
             /* Style rules go here. */
         </style>
     </head>
    
     <body>
-   
-        <!-- navbar [PLACEHOLDER] -->
-
-
-        <!-- headings
+        <script src="flickity.pkgd.min.js"></script>
         
-
+        <!-- navbar [PLACEHOLDER] -->
+        <nav id="header-container" >
+          <nav class="header">
+            <h1>Home</h1>
+            <h1>MOONDANCE</h1> 
+            <h1>Menu</h1> 
+          </nav>
+        </nav>
+        <!-- headings
         Purpose:
         - Main header section of the webpage
         - Contains the title, subtitle, image, and key buttons for the webpage
         -->
-        <div class="header">
-            <h1>Home</h1>
-            <h1>MOONDANCE</h1> 
-            <h1>Menu</h1> 
-        </div>
-        <hr>
         <center><h2>A Celebration of Whimsical Movies & Short Films</h2></center>
-
         <center><p>Join us in appreciating the many mystical movies and short films capturing our reality with kaleidoscope eyes.</p></center>
-
+        <br>
 
           <div id="animated-text-strip">
             <span class="marquee">FILM 1 - DIRECTOR 1 - FILM 2 - DIRECTOR 2 - FILM 3 - DIRECTOR 3 - FILM 4 - DIRECTOR 4 -&nbsp;</span>
             <span class="marquee">FILM 1 - DIRECTOR 1 - FILM 2 - DIRECTOR 2 - FILM 3 - DIRECTOR 3 - FILM 4 - DIRECTOR 4 -&nbsp;</span>
             <span class="marquee">FILM 1 - DIRECTOR 1 - FILM 2 - DIRECTOR 2 - FILM 3 - DIRECTOR 3 - FILM 4 - DIRECTOR 4 -&nbsp;</span>
           </div>
-
-          <!--arrows go here to toggle between films in the carosel-->
-
+          <br>
+          <!-- Flickity HTML init -->
+          <div class="carousel js-flickity">
+            <div class="carousel-cell">
+              <img src="img/film1.png" alt="film 1" />
+            </div>
+            <div class="carousel-cell">
+              <img src="img/film1.png" alt="film 1" />
+            </div>
+            <div class="carousel-cell">
+              <img src="img/film1.png" alt="film 1" />
+            </div>
+            <div class="carousel-cell">
+              <img src="img/film1.png" alt="film 1" />
+            </div>
+          </div>
+          <br>
           <div id="animated-text-strip2">
             <span class="marquee2"> FILM 1 - DIRECTOR 1 - FILM 2 - DIRECTOR 2 - FILM 3 - DIRECTOR 3 - FILM 4 - DIRECTOR 4 -&nbsp;</span>
             <span class="marquee2"> FILM 1 - DIRECTOR 1 - FILM 2 - DIRECTOR 2 - FILM 3 - DIRECTOR 3 - FILM 4 - DIRECTOR 4 -&nbsp;</span>
             <span class="marquee2"> FILM 1 - DIRECTOR 1 - FILM 2 - DIRECTOR 2 - FILM 3 - DIRECTOR 3 - FILM 4 - DIRECTOR 4 -&nbsp;</span>
           </div>
 
-        <button type="button">RSVP</button>
-        <button type="button">idk</button>
+        <!-- RSVP -->
+         
+<div id="rsvp">
+    <h1>RSVP</h1>
+    <div class="rsvp-container">
+        <div class="rscp-para">
+            <p>Please let us know if you are coming by filling out the form below to share your name and email!</p>
+        </div>
+        <div class="rsvp-participants">
+            <p>🎟️ Sophie from California has rsvp-ed.</p>
+            <p>🎟️ Keyura from California has rsvp-ed.</p>
+            <p>🎟️ Daniel from Mars has rsvp-ed.</p>
+        </div>
+    </div>
+
+
+    <!-- RSVP Form -->
+    <div class="form-container">
+        <form
+            id="rsvp-form"
+            title="rsvp-form"
+            action="https://formspree.io/f/xblylaqy"
+            method="POST"
+        >
+
+            <!-- Name Input -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+
+            <!-- Email Input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <!-- Submit button -->
+            <button id="rsvp-button" type="submit">Submit</button>
+          </form>
+      </div>
+
+</div>
 
 
         
