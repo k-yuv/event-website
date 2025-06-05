@@ -143,6 +143,38 @@ body {
 
 }
 
+.form-container {
+  color: #F9BA55;
+  font-size: 70%;
+  padding-left: 1.5em;
+}
+
+input[type=text] {
+  border: none;
+  border-radius: 4px;
+  margin-left:.5em;
+  margin-right: 1em;
+  background-color:#ebf0f2;
+}
+input[type=email] {
+  border: none;
+  border-radius: 4px;
+  margin-left:.5em;
+  margin-right: 1em;
+  background-color:#ebf0f2;
+}
+button {
+  border: none;
+  border-radius: 4px;
+  background-color: #F9BA55;
+  color:#1E0A1B;
+  transition: .3s;
+}
+button:hover{
+  cursor: pointer;
+  opacity: 70%;
+  transition: .3s;
+}
 
   /*! Flickity v2.3.0
 https://flickity.metafizzy.co
